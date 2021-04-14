@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    margin: 0;
+    
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #F8F8F9;
+    padding-top:15px;
+    padding-right:15px;
+  
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  
+  .topnav a:hover {
+    color:  #0062FF;
+  }
+  
+  .topnav a.active {
+    color: #0062FF;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  .topnav-right {
+    float: right;
+  }
+  
+  .button {
+    background-color: #60D91A; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+
+  /* Style the top timetable bar */
+  .timetable {
+    display: flex;
+    background-color: #F8F8F9;
+  }
+  
+  /* Style the timetable bar links */
+  .timetable a {
+    color: #728391;
+    background-color: #E8ECF1;
+    padding: 10px 24px;
+    margin-right:60px;
+    margin-left: 10px;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    opacity: 1;
+  }
+  
+  /* Change color on hover */
+  .timetable a:hover {
+    background-color: #0062FF;
+    color: white; 
+    box-shadow: 0px 10px 20px #0062FF4D;
+  }
+  
+  .timetable a.active {
+    background-color: #0062FF;
+    color: white; 
+    box-shadow: 0px 10px 20px #0062FF4D;
+  }
+  
+  
+  /* Column container */
+  .row {  
+    background-color: #F8F8F9;
+    display: flex;
+    overflow: hidden;
+    padding-left: 40px;
+    padding-right: 20px;
+  }
+  
+  /* Create two unequal columns that sits next to each other */
+  
+  /* Sidebar/left column */
+  .side , .sidebox {
+    flex: 1 1 300px;
+    padding: 20px;
+    text-align: center;
+    flex-wrap: wrap;
+  
+  }
+  
+  .side {
+      background: #F8F8F9;
+  
+  }
+  
+  .sidebox {
+      background-color: #0B2A5A;
+      justify-content: left;
+  
+  }
+  .sidebar {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #0B2A5A;
+    position: re;
+    height: 100%;
+    overflow: auto;
+    text-align: left;
+  }
+  
+  .sidebar a {
+    display: block;
+    color: #9A9ABE;
+    padding: 20px;
+    text-decoration: none;
+    border-left: 5px solid #0B2A5A;
+  }
+   
+  .sidebar a.active{
+    background-color: #0B2A5A;
+    color: #60D91A;
+    border-left-color: #60D91A;
+  }
+  
+  .sidebar a:hover:not(.active){
+    background-color: #0B2A5A;
+    color: #60D91A;
+    border-left-color: #60D91A;
+  }
+  
+  #propic {
+    border-radius: 50%;
+    border: #FFFFFF solid 0px;
+    margin: 50px 50px 20px 50px;
+  }
+  
+  
+  a > img {
+    margin: 0px 10px -8px 0px; 
+  }
+  
+  
+  /* Main/right column */
+  .main {
+    flex: 1 1 700px;
+    background: #F8F8F9;
+    padding: 20px;
+  }
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    background: #F8F8F9;
+  }  
+
+
+  
+  
+  @media screen and (max-width: 700px) {
+
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: left;
+      display: block;
+    }
+    #logo {
+      width: 50%;
+      height: auto;
+      margin-right: -60px;
+      margin-top: -10px;
+    }
+
+    .topnav-right.responsive {position: relative;}
+    .topnav-right.responsive .icon {
+      position: absolute;
+      left: 5px;
+      top: 0;
+    }
+    .topnav-right > .stuck {
+      display: none;
+    }
+    .topnav-right > .button {
+      float: right;
+      }
+    .topnav-right.responsive a {
+      float: none;
+      display: block;
+      text-align: right;
+    }
+
+    .row {   
+        flex-direction: column;
+      }
+      .timetable a {
+  
+        padding: 10px;
+        margin-right:20px;
+        margin-left: 20px;
+        font-size: 2.48vw;
+        width: 50%;
+        height: auto;
+        border-radius: 10px;
+        opacity: 1;
+      }
+  }
+
+
+  
