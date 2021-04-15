@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG IN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0px;
+        }
+        .topnav, .topnav-right {
+            background-color: #FFFFFF;
+        }
+        .container {
+            background-color: #FFFFFF;
+            display: flex;
+            flex-wrap: wrap;
+            margin: -20px -20px -20px -20px;
+        }
+        .left-side, .right-side {
+            flex: 1 1 800px;
+            height: auto;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .right-side {
+            flex: 1 1 400px;
+            background-color: #FFFFFF;
+            text-align: center;
+            overflow: hidden;
+            margin: 80px 20px;
+            padding: 20px;
+        }
+
+        .right-side p {
+            font-size: 14px;
+        }
+        .left-side > img {
+            margin: -20px;
+        }
+        
+        .left-side > h1 {
+            font-size: 40px;
+            color: #FFFFFF;
+            margin-top: -750px;
+        }
+        .left-side > h6 {
+            font-size: 14px;
+            color: #FFFFFF;
+            font-weight: lighter;
+            margin-bottom: -10px;
+        }
+        .left-side > h5 {
+            font-size: 18px;
+            color: #00F241;
+            margin-bottom: 100px;
+        }
+
+
+        input[type=text], select {
+            width: 100%;
+            color: #728391;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid#9A9ABE;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            background-color:#0062FF;
+            color: white;
+            padding: 20px 60px;
+            margin: 90px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+            background-color:#0062FF;
+        }
+
+        div {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .social-media > a > img{
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+        .social-media  {
+            padding-right: 5px;
+            margin-top: -10px; 
+            background-color: #FFFFFF;
+        }
+        
+        @media screen and (max-width: 700px) {
+
+            #logowhite {
+                width: 10%;
+                height: auto;
+                margin-left: -70px;
+                margin-right: 220px;
+                margin-top: -25px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Container -->
+<div class="topnav" >
+    <a href="#upskill" id="logowhite"><img src="assets/images/upskillwhite.png"></a>
+    <div class="topnav-right" id="myTopnav">
+      <a href="#home" class="active stuck">HOME</a>
+      <a href="#training">TRAINING</a>
+      <a href="#vidlessons">VIDEO LESSONS</a>
+      <a href="#earn">EARN WITH UPSKILL</a>
+      <a href="#signin" id="signin"class="active" style="margin: 0px 60px 0px 20px;"><i class="fa fa-fw fa-user"></i>SIGN IN</a>
+      <button class="button signup" style="margin: 0px 20px 0px 0px;">SIGN UP</button>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+ 
+  <div class ="container">
+    <div class="left-side">
+        <img src="assets/images/login.svg">
+        <h1>A few more clicks to<br>sign toyour Trainer Account</h1>
+        <h6>Manage workshop sales and view reports from your dashboard</h6>
+        <h6 style="margin-top: 260px;">For any problem with sign in please send mail to</h6>
+        <h5>sanan.upskill@gmail.com</h5>
+    </div>
+    <div class="right-side">
+        <h2>Log In</h2>
+        <form action="">
+            <input type="text" id="fname" name="firstname" placeholder="Email">
+            <input type="text" id="lname" name="lastname" placeholder="Password">
+            <div class="form-label" style="margin-top: -10px; background-color: #FFFFFF;">
+                <label for="pass" style="float: left;  margin-left: -20px; color: #0062FF;">Forgot password?</label>
+                <label for="member" style="float: right;  margin-right: -20px;">Not member yet?</label>
+            </div>
+            <input type="submit" value="SIGN IN">
+          </form>
+          <p style="margin-top: -50px;">or with</p>
+          <div class="social-media">
+            <a href="#facebook"><img src="assets/images/facebook-square-brands.svg"></a>
+            <a href="#linkedin"><img src="assets/images/linkedin-brands.svg"></a>
+        </div>
+        <p>By signing up agree to our</p>
+        <p style="color: #0062FF;">Terms and Conditions & Privacy Policy</p>
+    </div>
+
+  </div>
+  
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav-right") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav-right";
+      }
+    }
+    </script>
+
+</body>
+</html>
