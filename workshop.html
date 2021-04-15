@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY WORKSHOP</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.wrapper {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px 20px 30px 10px;
+}
+
+.card {
+    font-family: sans-serif;
+    width: 300px;
+    height: 329px;
+    background-color: #FFFFFF;
+    margin-right: 30px; 
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px #01368619;
+}
+
+.card-bottom {
+  background-color: #FFFFFF;
+  position: relative;
+  bottom: 25px;
+}
+.card-bottom > h3 {
+    color: black;
+    font-size: 16px;
+    text-align: left;
+    margin: 10px;
+    padding-right: 5px;
+    padding-top: 15px;
+}
+.card-bottom > p {
+    color: #728391;
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: left;
+    margin: -5px 10px -10px 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+ 
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+  .card {
+    margin: 30px;
+  }
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- Page Container -->
+
+<div class="topnav" >
+  <a href="#upskill" id="logo"><img src="assets/images/upskill.png"></a>
+  <div class="topnav-right" id="myTopnav">
+    <a href="#home" class="active stuck">HOME</a>
+    <a href="#training">TRAINING</a>
+    <a href="#vidlessons">VIDEO LESSONS</a>
+    <a href="#earn">EARN WITH UPSKILL</a>
+    <a href="#signin" id="signin"class="active" style="margin: 0px 60px 0px 20px;"><i class="fa fa-fw fa-user"></i>SIGN IN</a>
+    <button class="button signup" style="margin: 0px 20px 0px 0px;">SIGN UP</button>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+ <!-- The Grid -->
+<div class="row">
+
+  <!-- Left Column -->
+  <div class="side">
+    <div class="sidebox">
+      <img id="propic" src="assets/images/propic.png" alt="Avatar";>
+      <h2 style="font-size: 24px; color: #FFFFFF; align-content: center;">Md. Faruk Hossain</h2>
+      <h3 style="font-size: 16px; color: #9A9ABE; align-content: center; margin: 2px;">Head of Design</h3>
+      <p style="font-size: 14px; color: #9A9ABE; align-content: center;">Human Factors International (HFI), Scrum Alliance, University of Dhaka</p>
+    </div>
+
+    <div class="sidebar">
+        <a  href="#home"><img src="assets/images/browser.svg" alt="Girl in a jacket" width="30px" height="30px">  DASHBOARD</a>
+        <a href="#news"><img src="assets/images/file.svg" alt="Girl in a jacket" width="30px" height="30px">  VIEW SAMPLE OUTLINE</a>
+        <a href="#contact"><img src="assets/images/contract.svg" alt="Girl in a jacket" width="30px" height="30px">  CREATE COURSE</a>
+        <a class="active" href="#lecture"><img src="assets/images/lecture.svg" alt="Girl in a jacket" width="30px" height="30px">  MY WORKSHOP</a>
+        <a href="#user"><img src="assets/images/user.svg" alt="Girl in a jacket" width="30px" height="30px">  EDIT PROFILE</a>
+        <a href="#conversation"><img src="assets/images/conversation (1).svg" alt="Girl in a jacket" width="30px" height="30px">  MESSAGE</a>
+
+    </div>   
+  </div>
+<!-- End Left Column -->
+
+
+<!-- Right Column -->
+<div class="main">
+  
+<!-- Timetable Bar -->
+<div class="timetable">
+    <a class="active" href="#">UPCOMING</a>
+    <a href="#">PAST</a>
+    <a href="#">ALL</a>
+</div>
+
+
+<div class="wrapper">
+ <!-- ROW 1 -->
+
+    <div class="card">
+        <div class="fakeimg"><img src="assets/images/Presentation Skill for Kids.png"></img></div>  
+        <div class="card-bottom">
+            <h3>User Experience (UX) Design: From <br>Ideation to Validation</h3>
+            <p>10.12.2019 • 06:30pm-08:00pm<p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="fakeimg"><img src="assets/images/Mathematics for Kids.png"></img></div>  
+        <div class="card-bottom">
+            <h3>Bootcamp on Python Programing</h3>
+            <p>10.12.2019 • 06:30pm-08:00pm</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="fakeimg"><img src="assets/images/Faizaa Fariya Hridi.png"></img></div>  
+        <div class="card-bottom">
+            <h3>Starting Up your First Startup</h3>
+            <p>10.12.2019 • 06:30pm-08:00pm</p>
+        </div>
+    </div>
+ <!-- ROW 2 -->
+
+    <div class="card">
+      <div class="fakeimg"><img src="assets/images/marketing.png"></img></div>  
+      <div class="card-bottom">
+          <h3>User Experience (UX) Design: From <br>Ideation to Validation</h3>
+          <p>10.12.2019 • 06:30pm-08:00pm<p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="fakeimg"><img src="assets/images/Bootcamp-on-Python-Programming.png"></img></div>  
+      <div class="card-bottom">
+          <h3>Bootcamp on Python Programing</h3>
+          <p>10.12.2019 • 06:30pm-08:00pm</p>
+      </div>
+  </div>
+  <div class="card">
+      <div class="fakeimg"><img src="assets/images/Faizaa Fariya Hridi 2.png"></img></div>  
+      <div class="card-bottom">
+          <h3>Starting Up your First Startup</h3>
+          <p>10.12.2019 • 06:30pm-08:00pm</p>
+      </div>
+  </div>
+    
+</div>
+
+
+</div>
+<!-- End Right Column -->
+</div>
+<!-- End Grid -->
+
+</div>
+   
+
+<!-- Footer -->
+<div class="footer"></div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav-right") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav-right";
+    }
+  }
+  </script>
+
+</body>
+</html>
