@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIT PROFILE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+.card {
+  width: 960px;
+  height: 371px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #01368619;
+  margin-top: -1.5em;
+}
+.card2 {
+  width: 960px;
+  height: 267px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #01368619;
+}
+
+.card3 {
+  width: 960px;
+  height: 163px;
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 5px 10px #01368619;
+}
+
+  h6 {
+  color: #728391;
+  font-size: 14px;
+  padding: 1.5em;
+  margin-left: 0.3em;
+}
+
+::placeholder {
+  color: #728391;
+  font-size: 14px;
+  font-weight: lighter;
+}
+
+.card-upper {
+  display: flex;
+  margin-top: -2em;
+}
+
+.left-col, .right-col {
+  display: flex;
+  flex: 50%;
+  flex-direction: column;
+  margin: 0 1.5em 0 1.5em; 
+}
+
+#aboutme {
+  width: 95%;
+  padding: 0.7em;
+  margin-left: 2.0em;
+  margin-top: 1em;
+}
+.aboutme label {
+  margin-left: 2.0em;
+}
+.aboutme {
+  margin-top: 1.0em;
+}
+
+#address {
+  width: 95%;
+  padding: 0.7em;
+  margin-left: 2.0em;
+  margin-top: 0.5em;
+}
+.address label {
+  margin-left: 2.0em;
+}
+.address {
+  margin-bottom: 2.0em;
+  margin-top: -2.0em;
+}
+
+form input {
+  background-color: #F8F8F9;
+  border: 8px solid #F8F8F9;
+}
+.save {
+  background: #0062FF;
+  color: #FFFFFF;
+  padding: 1em;
+  width: 20%;
+  border-radius: 5px;
+  border: 0;
+  margin-top: 2rem;
+  margin-left: 350px;
+  margin-right: auto;
+}
+form button:hover {
+  background: lightgrey;
+}
+
+label {
+  padding: 0.5em 0.5em 0.5em 0;
+  font-weight: lighter;
+}
+
+input {
+  padding: 0.7em;
+  margin-bottom: 0.5rem;
+}
+input:focus {
+  outline: 3px solid lightgrey;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .card-upper {
+    flex-direction: column;
+  }
+  
+  .card, .card2, .card3 {
+    width: auto;
+    height: auto;
+    padding-bottom: 20px;
+  }
+  #aboutme, #address {
+      width: 87%;
+  }
+  
+  .aboutme {
+      order: 2;
+  }
+  .save {
+    margin-bottom: 1rem;
+    margin-left: 150px;
+  }
+  
+
+}
+
+</style>
+
+
+</head>
+<body>
+   <!-- Page Container -->
+
+<div class="topnav" >
+  <a href="#upskill" id="logo"><img src="assets/images/upskill.png"></a>
+  <div class="topnav-right" id="myTopnav">
+    <a href="index.html" class="active stuck">HOME</a>
+    <a href="#training">TRAINING</a>
+    <a href="#vidlessons">VIDEO LESSONS</a>
+    <a href="#earn">EARN WITH UPSKILL</a>
+    <a href="login.html" id="signin"class="active" style="margin: 0px 60px 0px 20px;"><i class="fa fa-fw fa-user"></i>SIGN IN</a>
+    <button class="button signup" style="margin: 0px 20px 0px 0px;">SIGN UP</button>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+ <!-- The Grid -->
+<div class="row">
+
+  <!-- Left Column -->
+  <div class="side">
+    <div class="sidebox">
+      <img id="propic" src="assets/images/propic.png" alt="Avatar";>
+      <h2 style="font-size: 24px; color: #FFFFFF; align-content: center;">Md. Faruk Hossain</h2>
+      <h3 style="font-size: 16px; color: #9A9ABE; align-content: center; margin: 2px;">Head of Design</h3>
+      <p style="font-size: 14px; color: #9A9ABE; align-content: center;">Human Factors International (HFI), Scrum Alliance, University of Dhaka</p>
+    </div>
+
+    <div class="sidebar">
+        <a  href="index.html"><img src="assets/images/browser.svg" alt="Girl in a jacket" width="30px" height="30px">  DASHBOARD</a>
+        <a href="#news"><img src="assets/images/file.svg" alt="Girl in a jacket" width="30px" height="30px">  VIEW SAMPLE OUTLINE</a>
+        <a href="#contact"><img src="assets/images/contract.svg" alt="Girl in a jacket" width="30px" height="30px">  CREATE COURSE</a>
+        <a  href="workshop.html"><img src="assets/images/lecture.svg" alt="Girl in a jacket" width="30px" height="30px">  MY WORKSHOP</a>
+        <a class="active" href="#user"><img src="assets/images/usergreen.svg" alt="Girl in a jacket" width="30px" height="30px">  EDIT PROFILE</a>
+        <a href="#conversation"><img src="assets/images/conversation (1).svg" alt="Girl in a jacket" width="30px" height="30px">  MESSAGE</a>
+
+    </div>   
+  </div>
+<!-- End Left Column -->
+
+
+<!-- Right Column -->
+<div class="main">
+  
+    <div class="card">
+          <form class="card-upper-form">
+            <h6>PERSONAL INFO</h6>
+
+            <div class="card-upper">
+                
+                <div class="left-col">
+                  <label for="userName" class="first-name">User Name</label>
+                  <input id="firstName" type="text" placeholder="Md. Faruk Hossain">
+                  
+                  <label for="email" class="first-name">Email</label>
+                  <input id="email" type="text" placeholder="faruk@gmail.com">
+                </div>
+                <div class="right-col">
+                  <label for="designation" class="last-name">Designation</label>
+                  <input id="designation" type="text" placeholder="Head of Design">
+                
+                  <label for="phone" class="last-name">Phone</label>
+                  <input id="phone" type="text" placeholder="01711 22 33 44">
+                </div>
+            </div>
+          </form>
+          <form>
+          <div class="aboutme">
+            <label for="aboutme" class="first-name">About Me</label>
+            <input id="aboutme" type="text" placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy">
+           </div>
+          </form>
+          </div>
+      
+      
+      
+          <div class="card2">
+            <h6>CONTACT INFORMATION</h6>
+            <form>
+              <div class="address">
+                  <label for="address" class="address">Address</label>
+                  <input id="address" type="text" placeholder="House. 123, Road. 5, Banani">
+              </div>
+            </form>
+            <form class="card-upper-form">
+              <div class="card-upper">
+                  <div class="left-col">
+                    <label for="city" class="city">City</label>
+                    <input id="city" type="text" placeholder="Dhaka">
+              
+                  </div>
+                  <div class="right-col">
+                    <label for="postal" class="postal">Postal code</label>
+                    <input id="postal" type="text" placeholder="1209">
+                 
+                  </div>
+              </div>
+            </form>
+            </div>
+      
+      
+            <div class="card3">
+              <h6>Change Password</h6>
+                <form class="card-upper-form">
+                  <div class="card-upper">
+                      <div class="left-col">
+                        <label for="newpass" class="newpass">New Password</label>
+                        <input id="newpass" type="text" placeholder="************">
+                      </div>
+                      <div class="right-col">
+                        <label for="conpass" class="conpass">Confirm Password</label>
+                        <input id="conpass" type="text" placeholder="************">
+                      </div>
+                  </div>
+                </form>
+              </div>
+              <button class="button save">SAVE</button>
+
+      </div>
+
+
+
+
+
+</div>
+<!-- End Right Column -->
+</div>
+<!-- End Grid -->
+
+</div>
+   
+
+<!-- Footer -->
+<div class="footer"></div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav-right") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav-right";
+    }
+  }
+  </script>
+</body>
+</html>
