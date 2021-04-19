@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UPSKILL</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family: sans-serif;
+}
+#container{
+	width:900px;
+	height:900px;
+	background:#F8F8F9;
+	margin:0 auto;
+	font-size:0;
+	border-radius:5px;
+	overflow:hidden;
+    
+}
+aside{
+	width:400px;
+	height:630px;
+	background-color:#1000A9;
+	display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+	overflow-y:scroll;
+
+}
+main{
+	width:490px;
+	height:630px;
+	display:inline-block;
+	font-size:15px;
+	vertical-align:top;
+}
+
+aside header{
+	padding:30px 50px;
+}
+aside input{
+	width:100%;
+	height:50px;
+	line-height:50px;
+	padding:0 50px 0 45px;
+	background-color:#F8F8F9;
+	border:none;
+	border-radius:40px;
+	color:#fff;
+	background-image:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1940306/ico_search.png);
+	background-repeat:no-repeat;
+	background-position:5px;
+	background-size:40px;
+}
+aside input::placeholder{
+	color:#728391;
+	margin-left: -15px;
+}
+aside ul{
+	padding-left:0;
+	margin:0;
+	height:690px;
+	list-style-type:none;
+}
+aside li{
+	padding:10px 0;
+}
+aside li:hover{
+	background-color:#0062FF;
+}
+h2,h3{
+	margin:0;
+}
+
+aside li {
+	color: #9A9ABE;
+}
+aside li img{
+    height: 60px;
+    width: 65px;
+	border-radius:50%;
+	margin-left:20px;
+	margin-right:8px;
+}
+aside li div{
+	display:inline-block;
+	vertical-align:top;
+	margin-top:2px;
+}
+aside li h2{
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:5px;
+	float: left;
+
+}
+aside li h3{
+	font-size:14px;
+	font-weight:bold;
+	float: left;
+}
+aside li p {
+	font-size:12px;
+	font-weight:normal;
+	padding-left: 6rem;
+	margin-top: -2.0rem;
+	line-height: 2;
+}
+
+aside li.active {
+	color:#fff;
+	background-color: #0062FF;
+}
+
+.status{
+	width:8px;
+	height:8px;
+	border-radius:50%;
+	margin-right: 6rem;
+}
+.green{
+	color:#58b666;
+	
+}
+
+.blue{
+	color:#0062FF;
+	
+}
+
+
+#chat{
+	padding-left:0;
+	margin:0;
+	list-style-type:none;
+	overflow-y:scroll;
+	height:535px;
+	border-top:2px solid #fff;
+	border-bottom:2px solid #fff;
+	background-color:#FFFFFF;
+
+}
+#chat li{
+	padding:10px 30px;
+}
+#chat h2,#chat h3{
+	display:inline-block;
+	font-size:13px;
+	font-weight:normal;
+}
+#chat .me h3{
+	color:#bbb;
+	float: left;
+}
+#chat .you h3{
+	color:#bbb;
+	float: right;
+}
+#chat .entete{
+	margin: 10px 40px 20px 40px;
+	
+}
+#chat .message{
+	padding:10px;
+	color:#FFFFFF;
+	line-height:25px;
+	max-width:90%;
+	display:inline-block;
+	text-align:left;
+	border-radius:5px;
+}
+#chat .me{
+	text-align:right;
+}
+#chat .you .message{
+	background-color: #728391;
+}
+#chat .me .message{
+	background-color:#60D91A;
+}
+#chat .triangle{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	
+}
+#chat .you .triangle{
+	border-color: transparent transparent #728391 transparent;
+	margin-top:-1.45rem;
+	margin-left: -1.25rem;
+	border-bottom: 20px solid #728391;
+	border-left: 20px solid transparent;
+}
+#chat .me .triangle{
+	border-color: transparent transparent #60D91A transparent;
+	margin-top:-1.45rem;
+	margin-left:25.7rem;
+	border-bottom: 20px solid #60D91A;
+    border-right: 20px solid transparent;
+}
+
+main footer{
+	padding:20px 30px 10px 20px;
+}
+main footer textarea{
+	resize:none;
+	border:none;
+	display:block;
+	width:100%;
+	height:55px;
+	border-radius:60px;
+	padding:20px;
+	font-size:13px;
+	margin-bottom:13px;
+	overflow: hidden;
+
+}
+main footer textarea::placeholder{
+	color:#ddd;
+}
+
+main footer a{
+	text-decoration:none;
+	text-transform:uppercase;
+	font-weight:bold;
+	color:#6fbced;
+	vertical-align:top;
+	margin-left:23rem;
+	margin-top:-3rem;
+	display:inline-block;
+}
+ 
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  
+    #container{
+	width:100%;
+	height:auto;
+	
+    
+}
+aside{
+	width:100%;
+	height:auto%;
+
+}
+main{
+	width:99%;
+	height:auto;
+}
+
+
+}
+
+</style>
+</head>
+<body>
+
+<!-- Page Container -->
+
+<div class="topnav" >
+  <a href="#upskill" id="logo"><img src="assets/images/upskill.png"></a>
+  <div class="topnav-right" id="myTopnav">
+    <a href="#home" class="active stuck">HOME</a>
+    <a href="#training">TRAINING</a>
+    <a href="#vidlessons">VIDEO LESSONS</a>
+    <a href="#earn">EARN WITH UPSKILL</a>
+    <a href="#signin" id="signin"class="active" style="margin: 0px 60px 0px 20px;"><i class="fa fa-fw fa-user"></i>SIGN IN</a>
+    <button class="button signup" style="margin: 0px 20px 0px 0px;">SIGN UP</button>
+  </div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+ <!-- The Grid -->
+<div class="row">
+
+  <!-- Left Column -->
+  <div class="side">
+    <div class="sidebox">
+      <img id="propic" src="assets/images/propic.png" alt="Avatar";>
+      <h2 style="font-size: 24px; color: #FFFFFF; align-content: center;">Md. Faruk Hossain</h2>
+      <h3 style="font-size: 16px; color: #9A9ABE; align-content: center; margin: 2px;">Head of Design</h3>
+      <p style="font-size: 14px; color: #9A9ABE; align-content: center;">Human Factors International (HFI), Scrum Alliance, University of Dhaka</p>
+    </div>
+
+    <div class="sidebar">
+        <a  href="index.html"><img src="assets/images/browser.svg" alt="Girl in a jacket" width="30px" height="30px">  DASHBOARD</a>
+        <a href="#news"><img src="assets/images/file.svg" alt="Girl in a jacket" width="30px" height="30px">  VIEW SAMPLE OUTLINE</a>
+        <a href="#contact"><img src="assets/images/contract.svg" alt="Girl in a jacket" width="30px" height="30px">  CREATE COURSE</a>
+        <a  href="workshop.html"><img src="assets/images/lecture.svg" alt="Girl in a jacket" width="30px" height="30px">  MY WORKSHOP</a>
+        <a href="editprofile.html"><img src="assets/images/user.svg" alt="Girl in a jacket" width="30px" height="30px">  EDIT PROFILE</a>
+        <a class="active" href="chat.html"><img src="assets/images/conversationgreen(1).svg" alt="Girl in a jacket" width="30px" height="30px">  MESSAGE</a>
+
+    </div>   
+  </div>
+<!-- End Left Column -->
+
+
+<!-- Right Column -->
+<div class="main">
+
+
+<div id="container">
+    <aside>
+        <header>
+            <input type="text" placeholder="search">
+        </header>
+        <ul>
+            <li class="active">
+                <img src="assets/images/pic1.png" alt="">
+                <div>
+                    <h2>Contact Name One</h2>
+                    <h3 class="status green">
+                        <span class="status green"></span>
+                        Now
+                    </h3>
+                </div>
+                <p>User Interface’ and both of these elements<br> are crucial for product development.</p>
+            </li>
+            <li>
+                <img src="assets/images/pic2.png" alt="">
+                <div>
+                    <h2>Contact Name Two</h2>
+                    <h3 class="status blue">
+                        <span class="status blue"></span>
+                        2hago
+                    </h3>
+                </div>
+                <p>User Interface’ and both of these elements<br> are crucial for product development.</p>
+
+            </li>
+            <li>
+                <img src="assets/images/pic3.png" alt="">
+                <div>
+                    <h2>Contact Name Three</h2>
+                    <h3 class="status blue">
+                        <span class="status blue"></span>
+                        23Apr
+                    </h3>
+                </div>
+                <p>User Interface’ and both of these elements<br> are crucial for product development.</p>
+
+            </li>
+            <li>
+                <img src="assets/images/pic4.png" alt="">
+                <div>
+                    <h2>Contact Name Four</h2>
+                    <h3 class="status blue">
+                        <span class="status blue"></span>
+                        11Mar
+                    </h3>
+                </div>
+                <p>User Interface’ and both of these elements<br> are crucial for product development.</p>
+            </li>
+            
+        </ul>
+    </aside>
+    <main>
+        
+        <ul id="chat">
+            <li class="you">
+                <div class="message">
+                    UX refers to the term ‘User Experience’ while ‘UI’ refers to ‘User Interface’ and both of these elements are crucial for product development. But despite their professional relationship, the roles they play are quite different.
+                </div>
+                <div class="triangle"></div>
+                <div class="entete">
+                    <h3>12.02.19 . 12.30 PM</h3>
+                </div>
+            </li>
+            <li class="me">
+                <div class="message">
+                    UX refers to the term ‘User Experience’ while ‘UI’ refers to ‘User Interface’ and both of these elements are crucial for product development. But despite their professional relationship, the roles they play are quite different.
+                </div>
+                <div class="triangle"></div>
+                <div class="entete">
+                    <h3>12.02.19 . 12.30 PM</h3>
+                </div>
+            </li>
+            <li class="you">
+                <div class="message">
+                    UX refers to the term ‘User Experience’ while ‘UI’ refers to ‘User Interface’ and both of these elements are crucial for product development. But despite their professional relationship, the roles they play are quite different.
+                </div>
+                <div class="triangle"></div>
+                <div class="entete">
+                    <h3>12.02.19 . 12.30 PM</h3>
+                </div>
+            </li>
+            <li class="me">
+                <div class="message">
+                    UX refers to the term ‘User Experience’ while ‘UI’ refers to ‘User Interface’ and both of these elements are crucial for product development. But despite their professional relationship, the roles they play are quite different.
+                </div>
+                <div class="triangle"></div>
+                <div class="entete">
+                    <h3>12.02.19 . 12.30 PM</h3>
+                </div>
+            </li>
+        </ul>
+        <footer>
+            <textarea placeholder="Type your message"></textarea>
+            <a href="#">Send</a>
+        </footer>
+    </main>
+</div>
+
+
+</div>
+<!-- End Right Column -->
+</div>
+<!-- End Grid -->
+
+</div>
+   
+
+<!-- Footer -->
+<div class="footer"></div>
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav-right") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav-right";
+    }
+  }
+  </script>
+
+</body>
+</html>
